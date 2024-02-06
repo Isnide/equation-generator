@@ -4,12 +4,12 @@ import math
 
      
 
-def generate_equation(case):
+def generate_equation(exercice):
     while True:
         try:
             a, b, c = random.randint(1, 10), random.randint(1, 10), random.randint(1, 10)
             discriminant = b**2 - 4*a*c
-            if case(discriminant):
+            if exercice(discriminant):
                 user_response = int(input(f"Trouve le discriminant de {a}x^2 + {b}x + {c} ? "))
                 if user_response == discriminant:
                     print("Bonne réponse")
