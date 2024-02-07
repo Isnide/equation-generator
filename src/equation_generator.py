@@ -26,11 +26,11 @@ def send_response(user_response,discriminant):
         print(f'mauvaise réponse, la bonne réponse était {discriminant}')
 
 
-def generate_equation(case):
+def generate_equation(exercice):
     while True:
         a,b,c = generate_three_values()
         discriminant = calculate_discriminant(a, b, c)
-        if case(discriminant):
+        if exercice(discriminant):
             user_response = get_user_response(a, b, c)
             send_response(user_response,discriminant)
             break
