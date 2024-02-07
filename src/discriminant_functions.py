@@ -9,3 +9,4 @@ def find_positive_not_squared_discriminant(discriminant):
 
 def find_negative_discriminant(discriminant):
     return discriminant < 0
+
